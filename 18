@@ -1,0 +1,1 @@
+prices={f"{item1}":f"{totalprice1}",f"{item2}":f"{totalprice2}",f"{item3}":f"{totalprice3}",f"{item4}":f"{totalprice4}",f"{item5}":f"{totalprice5}"}
