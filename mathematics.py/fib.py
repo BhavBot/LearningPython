@@ -3,7 +3,7 @@ i=input("n: ")
 n=0
 m=1
 if int(i)<=1:
-    print(f"fibbanachi sequence till 1 term:",[fib[0]])
+    print("fibbanachi sequence till 1 term:",[fib[0]])
 else:
     while (len(fib))!=int(i):
         fib.append(fib[n]+fib[m])

@@ -3,7 +3,11 @@ gradeavgs={}
 def displaymenu():
     print("----------Menu----------\n1.Add a student and their grades\n2.Remove a student\n3.View all students and their average grades\n4.Find the highest scoring student\n5.Exit the program")
     action=input("Choose action num:")
-    return action
+    if action.isnumeric():
+        return action
+    else:
+        print("WRONG TRY AGAIN")
+        returnmenu()
 def returnmenu():
     action=input("----------\npress enter to return to menu")
     if action=="":
