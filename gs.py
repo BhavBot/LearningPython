@@ -7,3 +7,4 @@ for grad in stud[name]:
     grad[name]=stud[name]
 print(stud)
 print(type(stud[name]))
+input("yo")
