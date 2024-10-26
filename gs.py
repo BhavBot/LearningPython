@@ -8,3 +8,5 @@ for grad in stud[name]:
 print(stud)
 print(type(stud[name]))
 input("yo")
+
+"":"""""" = lambda:def

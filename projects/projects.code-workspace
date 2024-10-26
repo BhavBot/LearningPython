@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"menu.background": "#4d1b0c", // Dark gray background for menus
+    "menu.foreground": "#f5a8a8", // Light gray text
+    "menu.selectionBackground": "#007ACC", // Blue for selected items
+    "menu.selectionForeground": "#FFFFFF", // White text for selected items
+	
+			"editor.background": "#010023",
+			"editor.foreground": "#a89494",
+			"activityBar.background": "#360535",
+			"sideBar.background": "#210202"
+		  },
+		  "editor.fontSize": 14
+	}
+}
