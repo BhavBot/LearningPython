@@ -37,7 +37,7 @@ print(4==8/2)
 print(7!=3)
 print(7>3)
 print(7<3)
-print(3>=5)
+print(3>=5) # yay
 print(3<=5)
 #logical operators
 a=6

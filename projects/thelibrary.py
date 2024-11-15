@@ -1,3 +1,6 @@
+from colorama import Fore
+from colorama import Style
+
 library = [{
     "title": "Book Title",
     "author": "Author Name",
@@ -60,8 +63,17 @@ def search(place,book,charecteristic):
             return i
         else:
             i+=1
+    return -1
             
 def viewinv():
+    print(f"{Fore.CYAN}----------View Inventory----------{Style.RESET_ALL}")
+    print("1. View whole inventory")
+    print("2. Search for a book")
+    print("--------------------")
+    viewaction=int(input("View: "))
+    return viewaction
+
+def viewwhleinv():
     for book in library:
         i=0
         print(f"""\n\033[32mBook Title: {book["title"]}
@@ -75,7 +87,28 @@ Author: {book["author"]}\033[0m""")
  Stock: {book["editions"][i]["formats"][format]["stock"]}""")
             i+=1
     returnmenu()
-    
+
+def searchbook():
+    book=input("Book title (no typos): ")
+    bookid=search(library,book,"title")
+    if bookid!=-1:
+        print(f"""\n\033[32mBook Title: {library[bookid]["title"]}
+        Author: {library[bookid]["author"]}\033[0m""")
+        i=0
+        for edition in library[bookid]["editions"]:
+            print("""----------Stock----------""")
+            print(f"""Edition/Year: {edition["year"]}""")
+            for format in library[bookid]["editions"][i]["formats"]:
+                if i==len(library[bookid]["editions"][i]["formats"]):
+                    break
+                else:
+                    print(f"""{format}: 
+        Price: {library[bookid]["editions"][i]["formats"][format]["price"]} 
+        Stock: {library[bookid]["editions"][i]["formats"][format]["stock"]}""")
+            i+=1
+    else:
+        print("Book doesnt exist")                     #it died try again
+        
 def editinv():
     print("\n----------Choose Editing----------")
     print("1.Add a book")
@@ -141,7 +174,7 @@ def removebook():
     delbook=input("Input book name (no typos): ")
     for book in library:
         if book["title"]==delbook:
-            confdel=input(f"Confirmation to delete {delbook} forever (A very long time!) (type yes or no): ")
+            confdel=input(f"Conrmation to delete {delbook} forever (A very long time!) (type yes or no): ")
             if confdel=="yes":
                 library.pop(i)
             else:
@@ -153,23 +186,40 @@ def removebook():
 def editbook():
     book=input("Book title (no typos): ")
     i=int(search(library,book,"title"))
+    
     print("\n----------Edit a book----------")
     print("1.Update editions")
     print("2.Update author")
     print("3.Update date")
-    bookedit=input("Edit which characterestic: ")
-    return bookedit,i
+    return i
 
 def uped():
-    year=input("Year of release of edition: ")
-    edition=search(library["editions"],year,"year")
+    year=int(input("Year of release of edition: "))
+    edition=search(library[bookindex]["editions"],year,"year")
+    
+    print("\n----------Edit a book----------")
+    print("1.Update stock")
+    print("2.Update price")
+    print("3.Update date")
+    return edition
     
 def upstock():
     print(f"""----------Edit stock----------
-1. Hardcover{library[editbook[i]]["formats"]}
+1. Hardcover 
 2. Softcover 
 3. eBook """)
+    stockaction=int(input("Edit which format: "))
+    return stockaction
+
+# def upprice():
+
+# def upeddate():
     
+# def upauth():
+    
+def update():
+    print(f"Current date: ")
+    date=input("")    
 editaction=0
 bookedit=0
 action=0
@@ -183,14 +233,42 @@ while action!=3:
         elif editaction==2:
             removebook()
         elif editaction==3:
-            bookedit=int(editbook()[0])
+            bookindex=int(editbook())
+            bookedit=int(input("Edit which characterestic: "))
             if bookedit==1:
                 uped()
+                edaction=int(input("Edit which characteristic: "))
+                if edaction==1:
+                    stockaction=upstock()
+                    if stockaction==1:
+                        uphardstock()
+                    if stockaction==2:
+                        upsoftstock()
+                    if stockaction==3:    
+                        upestock()
+                if edaction==2:
+                    priceaction=upprice()
+                    
+                    if priceaction==1:
+                        uphardprice()
+                    if priceaction==2:
+                        upsoftprice()
+                    if priceaction==3:
+                        upeprice()
+                if edaction==3:
+                    upeddate()
             if bookedit==2:
                 upauth()
             if bookedit==3:
                 update()    
     elif action==2:
-        viewinv()
+        viewaction=viewinv()
+        if viewaction==1:
+            viewwhleinv()
+        if viewaction==2:
+            searchbook()
+          
+         
+        
     
     
