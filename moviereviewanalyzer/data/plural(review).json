@@ -1,0 +1,74 @@
+[
+    {
+      "movie_title": "Inception",
+      "rating": 5,
+      "review": "A mind-bending thriller with stunning visuals and a gripping story.",
+      "reviewer": "Alice Johnson",
+      "date": "2024-03-15"
+    },
+    {
+      "movie_title": "The Dark Knight",
+      "rating": 5,
+      "review": "Heath Ledger’s Joker is legendary. One of the best superhero movies ever made.",
+      "reviewer": "Mark Spencer",
+      "date": "2024-02-28"
+    },
+    {
+      "movie_title": "Interstellar",
+      "rating": 4,
+      "review": "A visually breathtaking film with deep emotional and scientific concepts.",
+      "reviewer": "Lisa Adams",
+      "date": "2024-01-12"
+    },
+    {
+      "movie_title": "Titanic",
+      "rating": 4,
+      "review": "A heartbreaking love story set against a historical disaster.",
+      "reviewer": "David Wilson",
+      "date": "2024-03-02"
+    },
+    {
+      "movie_title": "Avengers: Endgame",
+      "rating": 5,
+      "review": "An epic conclusion to the Marvel saga with incredible action and emotions.",
+      "reviewer": "Samantha Lee",
+      "date": "2024-02-10"
+    },
+    {
+      "movie_title": "The Godfather",
+      "rating": 5,
+      "review": "A masterpiece in storytelling and character development. A must-watch classic.",
+      "reviewer": "John Carter",
+      "date": "2024-01-22"
+    },
+    {
+      "movie_title": "Joker",
+      "rating": 4,
+      "review": "A hauntingly brilliant performance by Joaquin Phoenix.",
+      "reviewer": "Emily Roberts",
+      "date": "2024-03-07"
+    },
+    {
+      "movie_title": "The Matrix",
+      "rating": 5,
+      "review": "Revolutionary sci-fi action with a deep philosophical twist.",
+      "reviewer": "Chris Evans",
+      "date": "2024-02-20"
+    },
+    {
+      "movie_title": "Shutter Island",
+      "rating": 4,
+      "review": "A psychological thriller with an unforgettable twist.",
+      "reviewer": "Jessica White",
+      "date": "2024-01-30"
+    },
+    {
+      "movie_title": "Forrest Gump",
+      "rating": 5,
+      "review": "A heartwarming story with a phenomenal performance by Tom Hanks.",
+      "reviewer": "Michael Scott",
+      "date": "2024-02-14"
+    }
+  ]
+   
+   

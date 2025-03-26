@@ -85,6 +85,23 @@
                               "stock": 8
                          }
                     }
+               },
+               {
+                    "year": "2024 BC",
+                    "formats": {
+                         "hardcover": {
+                              "price": 20.99,
+                              "stock": 10
+                         },
+                         "paperback": {
+                              "price": 19.99,
+                              "stock": 9
+                         },
+                         "eBook": {
+                              "price": 18.99,
+                              "stock": 8
+                         }
+                    }
                }
           ]
      }

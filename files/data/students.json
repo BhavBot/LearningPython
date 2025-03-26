@@ -106,4 +106,13 @@
         "doing things for fun",
         "lol"
     ]
+}{
+    "name": "me",
+    "age": "1/0",
+    "city": "beatlejuice",
+    "courses": [
+        "how to make money",
+        "doing things for fun",
+        "lol"
+    ]
 }
