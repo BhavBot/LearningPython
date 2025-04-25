@@ -1,0 +1,3 @@
+txt="chat stop calling me a beaver i am not a beaver i do not like beavers i am not a furry please stop calling me a beaver please i cant take it anymore i am not a beaver stop the beaver propaganda please stop chat it hurts calling me a beaver is one of the meanest things ever what would ever lead you to the conclusion that im a beaver i am not a beaver."
+txt2=txt.replace("beaver", "behave")
+print(txt2)

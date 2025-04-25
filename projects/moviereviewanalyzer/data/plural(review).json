@@ -68,7 +68,139 @@
       "review": "A heartwarming story with a phenomenal performance by Tom Hanks.",
       "reviewer": "Michael Scott",
       "date": "2024-02-14"
-    }
+    },{
+      "movie_title": "RRR",
+      "rating": 5,
+      "review": "Mind-blowing action and patriotic fervor. Contact 9876543210 for Telugu movie club info.",
+      "reviewer": "Vikram Reddy",
+      "date": "2023-12-05"
+    },
+    {
+      "movie_title": "Jersey",
+      "rating": 3,
+      "review": "Emotional sports drama. Book tickets at www.teluguboxoffice.com/jersey",
+      "reviewer": "Shweta Sharma",
+      "date": "2024-02-01"
+    },
+    {
+      "movie_title": "Oppenheimer",
+      "rating": 5,
+      "review": "Intense and philosophical. Watch trailer at https://youtube.com/watch?v=Oppenheimer2023",
+      "reviewer": "James Cole",
+      "date": "2023-08-20"
+    },
+    {
+      "movie_title": "Brahmastra",
+      "rating": 2,
+      "review": "Visual effects were good, but plot was weak. More info: www.astraknowledge.com/contact.html?email=info@astraknowledge.com",
+      "reviewer": "Anjali Mehta",
+      "date": "2023-10-01"
+    },
+    {
+      "movie_title": "KGF: Chapter 2",
+      "rating": 5,
+      "review": "Action-packed. Call +1-202-555-0143 for fan club registration.",
+      "reviewer": "Rohan Deshmukh",
+      "date": "2022-11-25"
+    },
+    {
+      "movie_title": "The Batman",
+      "rating": 3,
+      "review": "Dark, gritty, and well-acted. Review posted at batfans.net/reviews",
+      "reviewer": "Casey Grant",
+      "date": "2022-04-02"
+    },
+    {
+      "movie_title": "Drishyam 2",
+      "rating": 4,
+      "review": "Great suspense and storytelling. Contact +91-9988776655 for screening schedules.",
+      "reviewer": "Ravi Kumar",
+      "date": "2023-07-15"
+    },
+    {
+      "movie_title": "Parasite",
+      "rating": 5,
+      "review": "A masterclass in storytelling. Email reviews to critic@filmclub.com or visit https://filmclub.com/submit",
+      "reviewer": "Minji Lee",
+      "date": "2022-05-19"
+    },
+    {
+      "movie_title": "Baahubali: The Beginning",
+      "rating": 2,
+      "review": "Epic visuals and legendary scale. Join the fanbase: www.prabhasfans.in",
+      "reviewer": "Manoj Das",
+      "date": "2021-03-22"
+    },
+    {
+      "movie_title": "Kantara",
+      "rating": 3,
+      "review": "Unique storyline with folklore. Call us at 044-27891234 to know more.",
+      "reviewer": "Priya Sekhar",
+      "date": "2023-12-19"
+    },
+    {
+      "movie_title": "The Marvels",
+      "rating": 2,
+      "review": "Messy plot, lacked charm. Visit https://www.marvelfan.com for updates.",
+      "reviewer": "Alyssa Ford",
+      "date": "2024-01-05"
+    },
+    {
+      "movie_title": "Pushpa: The Rise",
+      "rating": 4,
+      "review": "Iconic dialogues. Check fan reactions at pushpafanbase.org/reviews",
+      "reviewer": "Srinivas Rao",
+      "date": "2023-09-12"
+    },
+    {
+      "movie_title": "Don (Tamil)",
+      "rating": 5,
+      "review": "College drama with comedy. Reach us: +44 20 7946 0958",
+      "reviewer": "Divya Krishnan",
+      "date": "2023-06-08"
+    },
+    {
+      "movie_title": "Liger",
+      "rating": 1,
+      "review": "Disastrous script and acting. Email feedback to feedback@ligerflop.com",
+      "reviewer": "Harsha Vardhan",
+      "date": "2022-08-25"
+    },
+    {
+      "movie_title": "Avatar: The Way of Water",
+      "rating": 5,
+      "review": "Stunning visuals and underwater world. Visit www.avatarworld.com for insights.",
+      "reviewer": "Emily Knight",
+      "date": "2023-02-03"
+    },
+    {
+      "movie_title": "Agent (Telugu)",
+      "rating": 2,
+      "review": "Poorly executed spy thriller. Call center: 080-12345678 for details.",
+      "reviewer": "Kiran Raju",
+      "date": "2023-05-16"
+    },
+    {
+      "movie_title": "Tenet",
+      "rating": 4,
+      "review": "Mind-bending and requires attention. Book club call: (202) 123-9876",
+      "reviewer": "Nathan Cho",
+      "date": "2021-12-09"
+    },
+    {
+      "movie_title": "Eega",
+      "rating": 5,
+      "review": "Creative and fun revenge tale. Read more: www.rajamanistories.in",
+      "reviewer": "Satya Narayan",
+      "date": "2020-07-21"
+    },
+    {
+      "movie_title": "Heropanti 2",
+      "rating": 1,
+      "review": "Unwatchable. Don't waste time. Full story at www.reviewdump.com/tiger",
+      "reviewer": "Ankita Sinha",
+      "date": "2022-04-30"
+    }
   ]
    
    
