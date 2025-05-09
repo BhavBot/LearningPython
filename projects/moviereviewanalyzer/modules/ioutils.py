@@ -10,7 +10,7 @@ def readpluralreview(reviewspath):
         return reviews
     
 def wrtsum(summary):
-    with open("data/summary.txt","w",encoding="utf-8") as file:
+    with open("moviereviewanalyzer/data/summary.txt","w",encoding="utf-8") as file:
         file.writelines(summary)
         file.close
     

@@ -1,4 +1,5 @@
 import math
+from modules.stringutils import replacewords
 # from modules.ioutils import readpluralreview
 
 
@@ -24,9 +25,12 @@ def computestats(reviews):
 def gensum(reviews):
     summ=[]
     for review in reviews:
-         summ.append(f"{review["movie_title"]}-{review["rating"]}/5: {review["review"]}\n-{review["reviewer"]}\n\n")
-    print(len(summ))
-    print(type(summ))
+        censsum=replacewords(f"{review["movie_title"]}-{review["rating"]}/5: {review["review"]}\n-{review["reviewer"]}\n\n", r'\bhttps?://[^\s]+|\bwww\.[^\s]+', "XXXXXXXXXXXXXXXXXX")
+        censsum=replacewords(censsum, r'\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b', "000000000000")
+        censsum=replacewords(censsum, r'\b(?:\+1[-.\s]?|1[-.\s]?)?(?:\(?\d{3}\)?[-.\s]?)\d{3}[-.\s]?\d{4}\b', "[redacted]")     
+        summ.append(censsum)
+    # print(len(summ))
+    # print(type(summ))
     return summ
     
     
