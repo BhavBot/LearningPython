@@ -1,0 +1,67 @@
+[
+  {
+    "name": "nate",
+    "task": "wake up",
+    "deadline": "8 AM"
+  },
+  {
+    "name": "barry",
+    "task": "open portal",
+    "deadline": "2100 AD"
+  },
+  {
+    "name": "larry",
+    "task": "play videogame",
+    "deadline": "0 seconds"
+  },
+  {
+    "name": "james",
+    "task": "do acting",
+    "deadline": "june 31"
+  },
+  {
+    "name": "bob newby",
+    "task": "dont die",
+    "deadline": "10s from now"
+  },
+  {
+    "name": "james",
+    "task": "do acting",
+    "deadline": "june 31"
+  },
+  {
+    "name": "bob newby",
+    "task": "dont die",
+    "deadline": "10s from now"
+  },
+  {
+    "name": "jinka",
+    "task": "eat grass",
+    "deadline": "today"
+  },
+  {
+    "name": "bird",
+    "task": "fly",
+    "deadline": "today"
+  },
+  {
+    "name": "BhavBot",
+    "task": "play doom eternal",
+    "deadline": "tomorrow"
+  },
+  {
+    "name": "rushi",
+    "task": "become a billionaire",
+    "deadline": "21 nov 2028"
+  },
+  {
+    "name": "dummy",
+    "task": "stand in a room for 8 hours",
+    "deadline": "forever"
+  },
+  {
+    "name": "",
+    "task": "",
+    "deadline": ""
+  }
+]

@@ -1,50 +1,29 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
+from htmlservice import html_page
+import json
+from flask_cors import CORS
 
-app=Flask(__name__)
-tasks=["wake up", "shower", "eat"]
+taskspath=r"D:\BhavDev\Learning\flash_microservices\data\tasks.json"
+app=Flask(__name__, static_folder="public")
+CORS(app)
+# tasks=[{"name":"nate",
+#         "task":"wake up",
+#         "deadline": "8 AM"},
+#        {"name":"barry",
+#         "task":"open portal",
+#         "deadline":"2100 AD"}]
+
+def readtasks(taskspath):
+    with open(taskspath, "r", encoding="utf-8") as file:
+        tasks=json.load(file)
+        return tasks
+
+tasks=readtasks(taskspath)
+
 @app.route("/")
 def home():
     print("hello gentlemen")
-    html_page = """
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hello Flask</title>
-    <style>
-        body {
-            background: linear-gradient(to right, #00b4db, #0083b0);
-            color: white;
-            font-family: 'Segoe UI', sans-serif;
-            text-align: center;
-            padding-top: 100px;
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 0.2em;
-        }
-        p {
-            font-size: 1.5em;
-            margin-top: 0;
-        }
-        .box {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            padding: 30px;
-            display: inline-block;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-    </style>
-</head>
-<body>
-    <div class="box">
-        <h1>Hello, Doom Slayer Crudeoil</h1>
-        <p>only you, can rip and tear until it is done</p>
-    </div>
-</body>
-</html>
-"""
-    return html_page                               # return "Doom Slayer Crudeoil"
+    return send_from_directory(app.static_folder, "index.html")                              # return "Doom Slayer Crudeoil"
 
 @app.route("/tasks")
 def gettasks():
@@ -54,7 +33,32 @@ def gettasks():
 def addtask():
     data=request.get_json()
     tasks.append(data["data"])
+    with open(r"D:\BhavDev\Learning\flash_microservices\data\tasks.json","w",encoding="utf-8") as file:
+        file.write(json.dumps(tasks, indent=2))
+        file.close
+    return jsonify({"status":"success"})
 
+@app.route("/deletetask", methods=["POST"])
+def deletetask():
+    data=request.get_json()
+    print("i have to delete:", data["task"])
+    print(data)
+    print(tasks)
+    for task in tasks:
+        if task["task"]==data["task"]:
+            tasks.remove(task)
+    with open(r"D:\BhavDev\Learning\flash_microservices\data\tasks.json","w",encoding="utf-8") as file:
+        file.write(json.dumps(tasks, indent=2))
+        file.close
+        
+        
+        
+        
+    # tasks.append(data["task"])
+    # with open(r"D:\BhavDev\Learning\flash_microservices\data\tasks.json","w",encoding="utf-8") as file:
+    #     file.write(json.dumps(tasks, indent=2))
+    #     file.close
+    return jsonify({"status":"success"})
 if "__main__"==__name__:
     # home()
     app.run()

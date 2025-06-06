@@ -12,5 +12,8 @@ def puttask(data):
     
 if __name__=="__main__":
     gettasks()
-    puttask("play videogame")
+    puttask({"name":"bird",
+             "task":"fly",
+             "deadline":"today"})
+    
     gettasks()
